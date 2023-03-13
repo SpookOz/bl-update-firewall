@@ -8,9 +8,9 @@
 
 To run
 - Download BL-Modify-Firewall.sh
-- Uncomment #APITOKEN=
-- Add API token after APITOKEN=
-  eg APITOKEN=43509845093745234060438765340567
+- Uncomment `#APITOKEN=`
+- Add API token after `APITOKEN=`
+  (eg: `APITOKEN=43509845093745234060438765340567`)
 
 This shell script will:
 - Lookup the server Public IP
@@ -24,6 +24,7 @@ This shell script will:
 - Fetches the new firewall rules from BinaryLane and displays them to the user to check
 
 NB: there is almost no error-checking in the scripts, except for a confirmation for the user to make sure they inputted the correct details. 
+
 NB: The process is destructive, in that it will overwrite the old firewall rules with the new ones. However, there are a few stopgaps in place to avoid irreparibly deleting firewall rules:
   1. A copy of the original unmodified rules can be found in /tmp/firewall.json. If something goes wrong, they can be easily uploaded.
   2. The BL API will not modify the firewall rules if the syntax is incorrect. So if something goes wrong when the script is creating the new rules, it probably won't update.
