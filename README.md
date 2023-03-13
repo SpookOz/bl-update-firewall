@@ -1,5 +1,15 @@
 # bl-update-firewall
-Updates firewall rule for current VPS using BinaryLane API
+
+## Updates firewall rule for current VPS using BinaryLane API
+
+### This must be run on a BinaryLane Linux VPS
+### Tested on RockyLinux8, but should work on all versions of Centos, Debian, Rocky, Ubuntu.
+
+To run
+- Download BL-Modify-Firewall.sh
+- Uncomment #APITOKEN=
+- Add API token after APITOKEN=
+  eg APITOKEN=43509845093745234060438765340567
 
 This shell script will:
 - Lookup the server Public IP
