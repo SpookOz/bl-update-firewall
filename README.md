@@ -2,7 +2,8 @@
 
 ## Updates firewall rule for current VPS using BinaryLane API
 
-### This must be run on a BinaryLane Linux VPS
+### This must be run on a BinaryLane Linux VPS.
+### The script is interactive and requires user input.
 ### Tested on RockyLinux8, but should work on all versions of Centos, Debian, Rocky, Ubuntu.
 
 To run
